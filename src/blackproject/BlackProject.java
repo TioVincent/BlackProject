@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package blackproject;
 
 /**
@@ -11,11 +7,17 @@ package blackproject;
  */
 public class BlackProject {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    private String nome = "";
+    
+    public BlackProject() {
+    }
+    
+    public BlackProject(String nome) {
+        this.nome = nome;
+    }
+    
+    public String getMessage() {
+        return ("Hello " + nome).trim();
     }
     
 }
